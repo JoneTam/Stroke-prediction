@@ -10,7 +10,7 @@ Repository: JoneTam/Stroke-prediction
 **1. healthcare-stroke-EDA.ipynb**  
 Exploratory Data Analysis (EDA) file.
 Statistical summaries, charts, anomaly testing, correlation checks, and other EDA elements.
-Statistical inference, including defining the target population, forming hypotheses, constructing confidence intervals, and conducting t-tests.
+Statistical inference, including defining the target population, forming hypotheses, constructing confidence intervals, and conducting t-tests.  
 **2. modeling.ipynb**  
 Modeling process steps.
 Data processing using pipelines for cleaning, SMOTE oversampling, feature engineering, and scaling.
@@ -20,13 +20,13 @@ Hyperparameter tuning using Grid Search for fine-tuning the selected models.
 Implementation of SHAP (SHapley Additive exPlanations) values for insights and explanations.
 **3. additional2_PYCARET with feat eng**  
 Supplementary content file.
-Experiment involving automated feature engineering using the PyCaret library to improve model performance.
+Experiment involving automated feature engineering using the PyCaret library to improve model performance.  
 **4. Functions**  
-.py file containing all classes and functions used in EDA and modeling.
+.py file containing all classes and functions used in EDA and modeling.  
 **5. fastapi**  
 Folder containing code for deploying the model on localhost with FastAPI.
 How to Contribute
-Feel free to contribute to the project by forking the repository and submitting pull requests. Your input is valuable in enhancing the accuracy and efficiency of the stroke prediction tool.
+Feel free to contribute to the project by forking the repository and submitting pull requests. Your input is valuable in enhancing the accuracy and efficiency of the stroke prediction tool.  
 
 For any questions or discussions, please connect with @JoneTam.
 
