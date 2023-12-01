@@ -11,13 +11,13 @@ from sklearn.metrics import (
 from sklearn.base import BaseEstimator, TransformerMixin
 
 
-def Categorical_to_binary(df, value1, value0):
+def categorical_to_binary(df: pd.DataFrame, value1: str, value0: str) -> pd.DataFrame:
     """Replace "yes" with 1 and "no" with 0"""
     df1 = df.applymap(lambda x: 1 if x == value1 else (0 if x == value0 else x))
     return df1
 
 
-def unique_values(df):
+def unique_values(df: pd.DataFrame) -> dict:
     """Lists all unique values in columns"""
     unique_values_dict = {}
 
@@ -29,7 +29,7 @@ def unique_values(df):
 # PLOTTING
 
 
-def my_countplot(df, feature1, feature2, title):
+def my_countplot(df: pd.DataFrame, feature1: str, feature2: str, title: str) -> None:
     """Plots the count plot of df, setting feature1 as name of X axis,
     feature2 as name of 'hue' parameter"""
 
@@ -42,7 +42,9 @@ def my_countplot(df, feature1, feature2, title):
     ax.bar_label(ax.containers[1])
 
 
-def my_proportionsplot(df, feature1, feature2, title):
+def my_proportionsplot(
+    df: pd.DataFrame, feature1: str, feature2: str, title: str
+) -> None:
     """Plots the proportion plot of df, setting feature1 as name of X axis,
     feature2 as name of 'hue' parameter"""
 
@@ -113,7 +115,7 @@ def plot_kde(df: pd.DataFrame, feature1: str, feature2: str) -> None:
 # STATISTICAL INFERENCE
 
 
-def Power_test_one_tail(proportion1: float, proportion2: float) -> None:
+def power_test_one_tail(proportion1: float, proportion2: float) -> None:
     """Prints the needed sample size to avoid p-hacking for one tail test.
     params: proportion1: float - proportion of positive target values in first group of interest;
             proportion2: float - proportion of positive target values in second group of interest;
@@ -126,7 +128,7 @@ def Power_test_one_tail(proportion1: float, proportion2: float) -> None:
     print(f" Required sample size:{required_n}")
 
 
-def calc_pi_t_test_proportions(df_emp: pd.DataFrame):
+def calc_pi_t_test_proportions(df_emp: pd.DataFrame) -> None:
     """Calculates pi value using t test for difference in proportions
     params: df_emp: DataFrame
     preparation of df:
@@ -199,11 +201,11 @@ def confusion_matrix_normalized(
 # Feature engineering
 
 
-def get_bmi_times_glucose(df):
+def get_bmi_times_glucose(df: pd.DataFrame) -> pd.DataFrame:
     df["bmi_times_glucose"] = df["bmi"] * df["avg_glucose_level"]
     return df.drop(["bmi", "avg_glucose_level"], axis=1)
 
 
-def get_age2_per_bmi(df):
+def get_age2_per_bmi(df: pd.DataFrame) -> pd.DataFrame:
     df["glucose_per_age"] = df["age"] * df["age"] / df["bmi"]
     return df.drop(["age", "bmi"], axis=1)
