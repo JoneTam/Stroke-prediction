@@ -14,7 +14,7 @@ Data processing using pipelines for cleaning, SMOTE oversampling, feature engine
 Evaluation of 11 baseline models through cross-validation, including Logistic Regression, Random Forest, SVC Linear, SVC RBF, KNN, XGBoost Classifier, LGBM Classifier, Naive Bayes, Ridge Classifier, Linear Discriminant Analysis, and AdaBoost Classifier.
 Selection of top three models (AdaBoost Classifier, SVC RBF, and Random Forest) based on F1 scores.
 Hyperparameter tuning using Grid Search for fine-tuning the selected models.
-Implementation of SHAP (SHapley Additive exPlanations) values for insights and explanations.
+Implementation of SHAP (SHapley Additive exPlanations) values for insights and explanations.  
 **3. additional2_PYCARET with feat eng**  
 Supplementary content file.
 Experiment involving automated feature engineering using the PyCaret library to improve model performance.  
