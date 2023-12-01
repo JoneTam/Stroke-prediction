@@ -25,6 +25,8 @@ Folder containing code for deploying the model on localhost with FastAPI.
 How to Contribute
 Feel free to contribute to the project by forking the repository and submitting pull requests. Your input is valuable in enhancing the accuracy and efficiency of the stroke prediction tool.  
 
+**Data Source:**
+Download the dataset from [here](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset).
 For any questions or discussions, please connect with @JoneTam.
 
 Thank you for your interest in the Stroke Prediction Project!
