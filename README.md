@@ -1,22 +1,33 @@
-# Stroke-prediction
-Goal: This project combines data analysis and machine learning to develop a tool that identifies high-risk individuals experiencing a stroke.
+## Stroke Prediction Tool
 
-Content:
+- Overview
+This project combines data analysis and machine learning to develop a tool that identifies high-risk individuals experiencing a stroke. The goal is to create a reliable model that can predict the likelihood of stroke based on various health-related features.
 
-•	1 healthcare-stroke-EDA.ipynb
-Within this file, you'll find exploratory data analysis. This includes creating statistical summaries and charts, testing for anomalies, and checking correlations and other relations between variables and other EDA elements. Also, statistical inference was performed. This includes defining the target population, forming multiple statistical hypotheses and constructing confidence intervals, setting the significance levels, and conducting t-tests for these hypotheses.
+- Repository Information
+Repository: JoneTam/Stroke-prediction
 
-•	modeling.ipynb
-Contains all the steps of the modeling process.
-I employed a series of data processing steps using pipelines, which included data cleaning, SMOTE oversampling, feature engineering, and scaling. These steps were crucial in preparing the final dataset for modeling. The primary success metric for assessing the performance of the stroke prediction models was the F1 score, chosen due to the data's class imbalance.
-In the initial phase, I evaluated 11 baseline models through cross-validation, including Logistic Regression, Random Forest, SVC Linear, SVC RBF, KNN, XGBoost Classifier, LGBM Classifier, Naive Bayes, Ridge Classifier, Linear Discriminant Analysis, and AdaBoost Classifier. From this evaluation, I selected the top three models with the highest F1 scores: AdaBoost Classifier, SVC RBF, and Random Forest.
-To fine-tune these models, I conducted hyperparameter tuning using Grid Search to identify the optimal set of parameters for each model. Additionally, I employed SHAP (SHapley Additive exPlanations) values to provide insights and explanations for the model's predictions.
+- Project Structure
+**1. healthcare-stroke-EDA.ipynb**
+Exploratory Data Analysis (EDA) file.
+Statistical summaries, charts, anomaly testing, correlation checks, and other EDA elements.
+Statistical inference, including defining the target population, forming hypotheses, constructing confidence intervals, and conducting t-tests.
+**2. modeling.ipynb**
+Modeling process steps.
+Data processing using pipelines for cleaning, SMOTE oversampling, feature engineering, and scaling.
+Evaluation of 11 baseline models through cross-validation, including Logistic Regression, Random Forest, SVC Linear, SVC RBF, KNN, XGBoost Classifier, LGBM Classifier, Naive Bayes, Ridge Classifier, Linear Discriminant Analysis, and AdaBoost Classifier.
+Selection of top three models (AdaBoost Classifier, SVC RBF, and Random Forest) based on F1 scores.
+Hyperparameter tuning using Grid Search for fine-tuning the selected models.
+Implementation of SHAP (SHapley Additive exPlanations) values for insights and explanations.
+**3. additional2_PYCARET with feat eng**
+Supplementary content file.
+Experiment involving automated feature engineering using the PyCaret library to improve model performance.
+**4. Functions**
+.py file containing all classes and functions used in EDA and modeling.
+**5. fastapi**
+Folder containing code for deploying the model on localhost with FastAPI.
+How to Contribute
+Feel free to contribute to the project by forking the repository and submitting pull requests. Your input is valuable in enhancing the accuracy and efficiency of the stroke prediction tool.
 
-•	3 additional2_PYCARET with feat eng
-This file includes supplementary content, an experiment involving automated feature engineering. I employed the PyCaret library to investigate whether it could improve the model's performance.
+For any questions or discussions, please connect with @JoneTam.
 
-•	Functions
-Contains .py file with all classes and functions, used in the EDA and Modeling.
-
-•	fastapi[folder]
-Contains code of deploying model on localhost with fast API.
+Thank you for your interest in the Stroke Prediction Project!
