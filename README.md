@@ -1,12 +1,9 @@
-## Stroke Prediction Tool  
+# Stroke Prediction Tool  
 
-- Overview  
+## Overview  
 This project combines data analysis and machine learning to develop a tool that identifies high-risk individuals experiencing a stroke. The goal is to create a reliable model that can predict the likelihood of stroke based on various health-related features.
 
-- Repository Information  
-Repository: JoneTam/Stroke-prediction
-
-- Project Structure  
+## Project Structure  
 **1. healthcare-stroke-EDA.ipynb**  
 Exploratory Data Analysis (EDA) file.
 Statistical summaries, charts, anomaly testing, correlation checks, and other EDA elements.
